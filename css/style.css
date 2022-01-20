@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-  width: 85vw;
+  width: 90vw;
   margin: auto;
   display: block;
 }
@@ -46,7 +46,7 @@ body {
 .box {
   padding: 10px;
   margin: 30px auto;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 1.5px rgba(0, 0, 0, 0.75);
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
@@ -55,7 +55,7 @@ body {
     rgba(36, 36, 36, 1) 100%
   );
   border-radius: 0.5em;
-  width: 85vw;
+  width: 90vw;
   height: auto;
   text-align: center;
 }
@@ -69,13 +69,13 @@ body {
   padding: 10px;
   margin: 20px 10px 5px 10px;
   border-radius: 1.5em;
-  width: 110px;
+  width: 100px;
   transition: 0.5s;
 }
 
 .btn:hover {
   cursor: pointer;
-  width: 130px;
+  width: 125px;
 }
 
 .btn-icon img,
