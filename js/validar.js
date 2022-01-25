@@ -1,23 +1,24 @@
-function validar(){
-  var formularioValido = false;
+function validar() {
   var texto = input.value
   var padronABuscar = /[^\s*a-z]/g
   var resultadoPadron = padronABuscar.test(texto)
-  
-   if(resultadoPadron == false){
-   encryptar() 
-   }else{
-  monstrarAlertaError()
-   }
+  var muneco = document.querySelector(".muneco-container")
+  var textoInfo = document.querySelector(".main-text-container")
+
+  if (resultadoPadron == false) {
+    output.classList.remove("active")
+    muneco.classList.add("active")
+    textoInfo.classList.add("active")
+    encryptar()
+  } else {
+    monstrarAlertaError()
+  }
 }
 
-function monstrarAlertaError(){
- var mostrarError = document.querySelector("#span-error")
- setTimeout(() => {
- mostrarError.classList.remove("span-error-msj")
- }, 50);
-
- setTimeout(() => {
-mostrarError.classList.add("span-error-msj")
-}, 10000);
+function monstrarAlertaError() {
+  var muneco = document.querySelector(".muneco-container")
+  var textoInfo = document.querySelector(".main-text-container")
+  output.classList.add("active")
+  muneco.classList.remove("active")
+  textoInfo.classList.remove("active")
 };
