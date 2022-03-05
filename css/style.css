@@ -8,7 +8,7 @@ body {
   background: #f3f5fc;
 }
 
-.main {
+main {
   position: relative;
   width: 1440px;
   height: 1024px;
@@ -358,7 +358,7 @@ body {
 
 /* media*/
 /* tablet */
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 768px) {
   .main {
     width: 768px;
     height: 1384px;
@@ -534,7 +534,7 @@ body {
 }
 
 /* phone */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .main {
     width: 375px;
     height: 1700px;
